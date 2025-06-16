@@ -1,0 +1,336 @@
+/* General Layout */
+.msa-automatic-admin {
+    margin: 20px 0;
+}
+
+.msa-content-wrapper {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+/* Navigation Tabs */
+.nav-tab-wrapper {
+    margin-bottom: 0;
+}
+
+/* Grid Layout */
+.msa-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tool Boxes */
+.msa-tool-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.msa-tool-box h3 {
+    margin: 0;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f8f9fa;
+}
+
+.msa-tool-content {
+    padding: 15px;
+}
+
+/* Campaign List */
+.msa-campaigns-wrapper {
+    margin-top: 20px;
+}
+
+.msa-campaigns-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.msa-campaigns-filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Status Indicators */
+.msa-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.msa-status-active {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.msa-status-paused {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.msa-status-error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Log Levels */
+.msa-log-level {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.msa-log-level-debug {
+    background-color: #e8eaf6;
+    color: #3f51b5;
+}
+
+.msa-log-level-info {
+    background-color: #e3f2fd;
+    color: #2196f3;
+}
+
+.msa-log-level-warning {
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+.msa-log-level-error {
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+/* Settings Forms */
+.msa-api-settings {
+    display: none;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+.msa-api-settings.active {
+    display: block;
+}
+
+/* Modal Styles */
+.msa-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.msa-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.msa-modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Stats Display */
+.msa-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.msa-stat-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.msa-stat-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.msa-stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+/* Recent Activity */
+.msa-activity-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.msa-activity-item:last-child {
+    border-bottom: none;
+}
+
+.msa-activity-time {
+    font-size: 12px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.msa-activity-message {
+    margin-left: 10px;
+}
+
+/* Footer */
+.msa-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msa-footer-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.msa-stat {
+    color: #666;
+    font-size: 13px;
+}
+
+.msa-footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.msa-footer-links a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.msa-footer-links a:hover {
+    color: #00a0d2;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .msa-campaigns-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .msa-campaigns-filters {
+        flex-wrap: wrap;
+    }
+
+    .msa-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .msa-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .msa-footer-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tool Actions */
+.msa-tool-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.msa-tool-action {
+    flex: 1;
+}
+
+/* Debug Tools */
+.msa-debug-mode {
+    margin-bottom: 20px;
+}
+
+.msa-test-api {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Database Info Table */
+.msa-db-info table {
+    margin-top: 15px;
+}
+
+.msa-db-info th {
+    text-align: left;
+}
+
+/* Import/Export Section */
+.msa-import-campaigns {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* API Settings Tabs */
+.msa-api-settings-tabs .nav-tab-wrapper {
+    margin-bottom: 15px;
+}
+
+.msa-api-settings-tabs .nav-tab {
+    cursor: pointer;
+}
+
+/* Form Fields */
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="password"],
+.form-table select {
+    width: 25em;
+    max-width: 100%;
+}
+
+.description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
